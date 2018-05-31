@@ -1,4 +1,5 @@
-.indexbody{
+
+.body{
 	font-family:"courier new";
 	background: url("images/field.jpg");
 	background-size: cover;
@@ -6,6 +7,61 @@
 	color: white;
 	cursor: url("images/rm.png"), auto;
 }
+
+.outergrid {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: .5fr 1fr .5fr 3fr .5fr;
+  grid-gap: 8px;
+  border: 5px solid black;
+  color: black;
+  color: black;
+}
+.border {
+  background-color: #DAD9FF;
+  color: black;
+  font-size: 16px;
+  padding: 8px;
+  border: 7px solid #AEA5FF;
+}
+.col1-span5 {
+	grid-column-start: 1;
+	grid-column-end: span 5;
+}
+.col2-span1 {
+	grid-column-start: 2;
+	grid-column-end: span 1;
+}
+.col4-span1 {
+	grid-column-start: 4;
+	grid-column-end: span 1;
+}
+
+.divscroll{  
+    border: 10px solid #6E5BA1;
+    border-radius: 8px;
+    color: #3B3C3E;
+    font-size: 12px;
+    font-weight: bold;
+	grid-column-start: 2;
+	grid-column-end: span 3;
+    grid-row: span 3;
+}
+.divscroll{
+    height:500px;
+	overflow-y: scroll;
+    overflow-x:hidden;
+	color: white;
+	
+}		
+
+
+.scrollmain{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+	
 .sidebar {
     height: 100%; 
     width: 160px; 
@@ -32,9 +88,8 @@
 .main {
     margin-left: 160px;
     padding: 0px 10px;
-}
-	
-  .main {
+}	
+ .main {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
   }
@@ -44,20 +99,21 @@
      grid-row: span 2;
 	 
   }  
-  .figure1 {
+ .figure1 {
     grid-column-start: 3;
 	grid-column-end: span 3;
     grid-row: span 2;
   }
-.logo-img{
-	width: 5%;
-}
+
 .logo {
   display: flex;
-  align-items: center;
+  align-items: left;
   text-decoration: none;
 }
-
+.logo-img{
+	width: 5%;
+	padding: 10px 110px 70px 0;
+}
 body {
   max-width: 1600px;
   margin: 0 auto;
@@ -99,4 +155,89 @@ h2 {
 p {
   margin-bottom: 1em;
 }
+
+.grid{
+    display: grid;
+	grid-template-rows: 1fr 1fr;
+	grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	border:2px green;
+	margin-left: 160px;
+    padding: 0px 10px;
+}
+.pic1{
+	width: 100%;
+	padding: 1em;
+	grid-column-start: 2;
+	grid-column-end: span 1;
+}
+.pic2{
+	width: 100%;
+	padding: 1em;
+	grid-column-start: 3;
+	grid-column-end: span 1;
+}
+.pic3{
+    width: 100%;
+	padding: 1em;
+	grid-column-start: 4;
+	grid-column-end: span 1;
+}
+.pic4{
+	width: 100%;
+	padding: 1em;
+	grid-column-start: 5;
+	grid-column-end: span 1;
+}
+.statinfo{
+	background-color:#5EA3B0;
+	padding: 1em;
+	margin-left: 30px;
+	grid-column-start: 3;
+	grid-column-end: span 2;
+}
+.pic5{
+	width: 100%;
+	padding: 1em;
+	grid-column-start: 2;
+	grid-column-end: span 1;
+}
+.pic6{
+	width: 100%;
+	padding: 1em;
+	grid-column-start:5;
+	grid-column-end: span 1;
+}
+.pic7{
+	width: 100%;
+	padding: 1em;
+	grid-column-start: 2;
+	grid-column-end: span 1;
+}
+.pic8{
+	width: 100%;
+	padding: 1em;
+	grid-column-start: 3;
+	grid-column-end: span 1;
+}
+.pic9{
+	width: 100%;
+	padding: 1em;
+	grid-column-start: 4;
+	grid-column-end: span 1;
+}
+.pic10{
+	width: 100%;
+	padding: 1em;
+	grid-column-start: 5;
+	grid-column-end: span 1;
+}
+.boxed {
+  border: 3px solid black;
+}
+.divscroll2{
+    height: 350px;
+	overflow-y: scroll;
+    overflow-x:hidden;
+	color: white;
+}		
 
